@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>Method Template</Title>
+    <Author>Mike Jansen</Author>
+    <Shortcut>x-meth</Shortcut>
+    <Description>Method Template with logging</Description>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Code Language="CSharp">
+      <![CDATA[MethodBase currentMethod = MethodBase.GetCurrentMethod();
+            Log.EnterMethod(Logger, currentMethod);
+            try
+            {
+                // **************************************************
+
+                $selected$$end$
+
+                // **************************************************
+            }
+            catch (Exception ex)
+            {
+                Logger.Error("Unhandled exception. Rethrowing.", ex);
+                throw;
+            }
+            finally
+            {
+                Log.ExitMethod(Logger, currentMethod);
+            }
+]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

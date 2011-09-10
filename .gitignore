@@ -1,0 +1,7 @@
+*.suo
+[Oo]bj/
+[Bb]in/
+Local.testsettings
+TraceAndTestImpact.testsettings
+TestResults/
+*.user
