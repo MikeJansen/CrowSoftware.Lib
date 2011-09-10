@@ -47,7 +47,7 @@ namespace CrowSoftware.Common.Config
             {
                 // **************************************************
 
-                Logger.Info("Protecting config section '{0}'", section);
+                Logger.InfoFormat("Protecting config section '{0}'", section);
                 SC.Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
                 config.Sections[section].SectionInformation.ProtectSection(null);
                 config.Save(ConfigurationSaveMode.Minimal, true);

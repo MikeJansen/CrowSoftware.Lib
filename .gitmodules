@@ -1,0 +1,4 @@
+[submodule "NDesk.Options"]
+	path = NDesk.Options
+	url = git://github.com/MikeJansen/NDesk.Options.StrongNamed.git
+	fetchRecurseSubmodules = true

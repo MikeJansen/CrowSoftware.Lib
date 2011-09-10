@@ -13,7 +13,7 @@ namespace CrowSoftware.Common.Log
         {
             if (logger.IsDebugEnabled)
             {
-                logger.Debug("ENTER {0}.{1} ", currentMethod.DeclaringType.FullName, currentMethod.Name);
+                logger.DebugFormat("ENTER {0}.{1} ", currentMethod.DeclaringType.FullName, currentMethod.Name);
             }
         }
 
@@ -21,7 +21,7 @@ namespace CrowSoftware.Common.Log
         {
             if (logger.IsDebugEnabled)
             {
-                logger.Debug("EXIT {0}.{1} ", currentMethod.DeclaringType.FullName, currentMethod.Name);
+                logger.DebugFormat("EXIT {0}.{1} ", currentMethod.DeclaringType.FullName, currentMethod.Name);
             }
         }
 

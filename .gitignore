@@ -5,3 +5,4 @@ Local.testsettings
 TraceAndTestImpact.testsettings
 TestResults/
 *.user
+packages/
